@@ -7,9 +7,9 @@ class A {
         friend class B;
 };
 
-class B {
+class B { // has no inheritence
     public:
-        void reveal(A obj) {
+        void reveal(A obj) { // pass the object for friends
             cout<<"Accessing A's private data"<<obj.secret<<endl;
         }
 };
